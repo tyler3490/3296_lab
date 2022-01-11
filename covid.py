@@ -3,11 +3,10 @@ def covid(D):
     D = int(D)
     I = 7
     R = 1.2
-    total_infection = None
     population = 39740
     for i in range(D):
-        I=R*I
-        if (i == 14):
+        I=R*I 
+        if (i == 13): # day 14, it starts at 0
             print("Infected Students at drop/add: " + str(round(I)) )
             print("Money lost: $" + str(round((I*9972), 2)))
 
